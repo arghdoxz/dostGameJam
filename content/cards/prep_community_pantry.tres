@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="PreparednessCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/effect_definition.gd" id="1_2waog"]
+[ext_resource type="Script" path="res://scripts/defs/preparedness_card_def.gd" id="2_quw6m"]
+
+[sub_resource type="Resource" id="Resource_1ekcv"]
+script = ExtResource("1_2waog")
+amount = 2
+
+[sub_resource type="Resource" id="Resource_232a3"]
+script = ExtResource("1_2waog")
+kind = 3
+
+[resource]
+script = ExtResource("2_quw6m")
+effects = Array[ExtResource("1_2waog")]([SubResource("Resource_1ekcv"), SubResource("Resource_232a3")])
+id = "prep_community_pantry"
+display_name = "Community Pantry"
+card_type = 2
+cost = {
+"any": 1
+}
+tags = PackedStringArray()
+flavor = "Take what you need, give what you can."
+dr_tip = "Share supplies and look after vulnerable neighbors."
+art_id = "prep_community_pantry"

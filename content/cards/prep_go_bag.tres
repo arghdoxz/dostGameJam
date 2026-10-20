@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="PreparednessCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/effect_definition.gd" id="1_2b08u"]
+[ext_resource type="Script" path="res://scripts/defs/preparedness_card_def.gd" id="2_6xw0m"]
+
+[sub_resource type="Resource" id="Resource_5xpuw"]
+script = ExtResource("1_2b08u")
+kind = 0
+
+[resource]
+script = ExtResource("2_6xw0m")
+effects = Array[ExtResource("1_2b08u")]([SubResource("Resource_5xpuw")])
+id = "prep_go_bag"
+display_name = "Go Bag"
+card_type = 3
+tags = PackedStringArray()
+flavor = "Packed and by the door."
+dr_tip = "Pack documents, water, a flashlight and first aid."
+art_id = "prep_go_bag"

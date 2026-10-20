@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ResourceCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/resource_card_def.gd" id="1_4rhek"]
+
+[resource]
+script = ExtResource("1_4rhek")
+resource_kind = "supplies"
+id = "res_supplies"
+display_name = "Supplies"
+tags = PackedStringArray()
+flavor = "Food, water and medicine."
+dr_tip = "Keep a go-bag stocked with 3 days of food and water."
+art_id = "res_supplies"

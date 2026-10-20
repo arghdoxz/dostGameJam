@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ResourceCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/resource_card_def.gd" id="1_flfs7"]
+
+[resource]
+script = ExtResource("1_flfs7")
+resource_kind = "funds"
+id = "res_funds"
+display_name = "Funds"
+tags = PackedStringArray()
+flavor = "The local DRRM fund."
+dr_tip = "By law, at least 5% of local revenue goes to the DRRM fund."
+art_id = "res_funds"

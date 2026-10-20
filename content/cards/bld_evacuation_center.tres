@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BuildingCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/buildings/bld_evacuation_center.tres" id="1_ni48p"]
+[ext_resource type="Script" path="res://scripts/defs/building_card_def.gd" id="2_73cst"]
+
+[resource]
+script = ExtResource("2_73cst")
+building = ExtResource("1_ni48p")
+id = "bld_evacuation_center"
+display_name = "Evacuation Center"
+card_type = 1
+cost = {
+"funds": 2,
+"materials": 2
+}
+tags = PackedStringArray()
+flavor = "Safe ground with a roof."
+dr_tip = "Know your nearest evacuation center and the route to it."
+art_id = "bld_evacuation_center"

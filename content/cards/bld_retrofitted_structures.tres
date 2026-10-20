@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BuildingCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/buildings/bld_retrofitted_structures.tres" id="1_ima1h"]
+[ext_resource type="Script" path="res://scripts/defs/building_card_def.gd" id="2_5oawg"]
+
+[resource]
+script = ExtResource("2_5oawg")
+building = ExtResource("1_ima1h")
+id = "bld_retrofitted_structures"
+display_name = "Retrofitted Structures"
+card_type = 1
+cost = {
+"funds": 1,
+"materials": 2
+}
+tags = PackedStringArray()
+flavor = "Strong frames, strong roofs."
+dr_tip = "Retrofit old buildings to meet the National Building Code."
+art_id = "bld_retrofitted_structures"

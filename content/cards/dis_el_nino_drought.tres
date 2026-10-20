@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_el_nino_drought.tres" id="1_ff8yf"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_b8hv4"]
+
+[resource]
+script = ExtResource("2_b8hv4")
+disaster = ExtResource("1_ff8yf")
+id = "dis_el_nino_drought"
+display_name = "El Nino Drought"
+card_type = 4
+deck = 1
+tags = PackedStringArray()
+flavor = "No rain for months."
+dr_tip = "Store water and conserve it during dry spells."
+art_id = "disaster_el_nino_drought"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_storm_surge.tres" id="1_bx7po"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_8o65t"]
+
+[resource]
+script = ExtResource("2_8o65t")
+disaster = ExtResource("1_bx7po")
+id = "dis_storm_surge"
+display_name = "Storm Surge"
+card_type = 4
+deck = 1
+cost = {
+"any": 2
+}
+tags = PackedStringArray()
+flavor = "The sea climbs the streets."
+dr_tip = "Move to higher ground when surge warnings are issued."
+art_id = "disaster_storm_surge"

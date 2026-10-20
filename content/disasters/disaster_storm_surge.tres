@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DisasterDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/disaster_definition.gd" id="1_pyjmj"]
+
+[resource]
+script = ExtResource("1_pyjmj")
+id = "disaster_storm_surge"
+level = 3
+damage_min = 6
+damage_max = 6
+tags = PackedStringArray("storm_surge", "flood")
+targeting = 1
+secondary_kind = 1

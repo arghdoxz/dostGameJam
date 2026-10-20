@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PreparednessCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/effect_definition.gd" id="1_s712h"]
+[ext_resource type="Script" path="res://scripts/defs/preparedness_card_def.gd" id="2_exctb"]
+
+[sub_resource type="Resource" id="Resource_25w7h"]
+script = ExtResource("1_s712h")
+kind = 0
+amount = 2
+
+[resource]
+script = ExtResource("2_exctb")
+effects = Array[ExtResource("1_s712h")]([SubResource("Resource_25w7h")])
+id = "prep_preemptive_evacuation"
+display_name = "Pre-emptive Evacuation"
+card_type = 3
+cost = {
+"any": 1
+}
+tags = PackedStringArray()
+flavor = "Move before the water does."
+dr_tip = "Evacuate early, not when the water is at the door."
+art_id = "prep_preemptive_evacuation"

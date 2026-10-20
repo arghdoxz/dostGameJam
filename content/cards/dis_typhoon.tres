@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_typhoon.tres" id="1_ri6eu"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_ajriy"]
+
+[resource]
+script = ExtResource("2_ajriy")
+disaster = ExtResource("1_ri6eu")
+id = "dis_typhoon"
+display_name = "Typhoon"
+card_type = 4
+deck = 1
+cost = {
+"any": 1
+}
+tags = PackedStringArray()
+flavor = "Signal No. 4 over the coast."
+dr_tip = "Secure roofs and loose objects before a typhoon."
+art_id = "disaster_typhoon"

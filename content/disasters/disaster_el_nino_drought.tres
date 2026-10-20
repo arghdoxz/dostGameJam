@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DisasterDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/disaster_definition.gd" id="1_hvm56"]
+
+[resource]
+script = ExtResource("1_hvm56")
+id = "disaster_el_nino_drought"
+tags = PackedStringArray("drought")
+secondary_kind = 2

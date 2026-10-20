@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_volcanic_eruption.tres" id="1_riusw"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_ax1tr"]
+
+[resource]
+script = ExtResource("2_ax1tr")
+disaster = ExtResource("1_riusw")
+id = "dis_volcanic_eruption"
+display_name = "Volcanic Eruption"
+card_type = 4
+deck = 1
+cost = {
+"any": 1
+}
+tags = PackedStringArray()
+flavor = "Ash darkens the afternoon."
+dr_tip = "Follow the PHIVOLCS alert level and stay out of danger zones."
+art_id = "disaster_volcanic_eruption"

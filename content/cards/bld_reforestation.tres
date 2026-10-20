@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BuildingCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/buildings/bld_reforestation.tres" id="1_fbpvs"]
+[ext_resource type="Script" path="res://scripts/defs/building_card_def.gd" id="2_4qj8e"]
+
+[resource]
+script = ExtResource("2_4qj8e")
+building = ExtResource("1_fbpvs")
+id = "bld_reforestation"
+display_name = "Reforestation"
+card_type = 1
+cost = {
+"materials": 1,
+"supplies": 1
+}
+tags = PackedStringArray()
+flavor = "Roots hold the hillside."
+dr_tip = "Tree cover on slopes reduces landslide risk."
+art_id = "bld_reforestation"

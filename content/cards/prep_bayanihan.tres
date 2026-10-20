@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PreparednessCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/effect_definition.gd" id="1_0swxw"]
+[ext_resource type="Script" path="res://scripts/defs/preparedness_card_def.gd" id="2_g54c5"]
+
+[sub_resource type="Resource" id="Resource_jrvhg"]
+script = ExtResource("1_0swxw")
+kind = 2
+amount = 2
+
+[resource]
+script = ExtResource("2_g54c5")
+effects = Array[ExtResource("1_0swxw")]([SubResource("Resource_jrvhg")])
+id = "prep_bayanihan"
+display_name = "Bayanihan"
+card_type = 2
+cost = {
+"supplies": 1
+}
+tags = PackedStringArray()
+flavor = "Many hands, light work."
+dr_tip = "Communities recover faster when neighbors help each other."
+art_id = "prep_bayanihan"

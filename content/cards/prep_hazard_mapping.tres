@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PreparednessCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/effect_definition.gd" id="1_iqsxj"]
+[ext_resource type="Script" path="res://scripts/defs/preparedness_card_def.gd" id="2_qn11j"]
+
+[sub_resource type="Resource" id="Resource_g7nec"]
+script = ExtResource("1_iqsxj")
+kind = 4
+
+[resource]
+script = ExtResource("2_qn11j")
+effects = Array[ExtResource("1_iqsxj")]([SubResource("Resource_g7nec")])
+id = "prep_hazard_mapping"
+display_name = "Hazard Mapping"
+card_type = 2
+cost = {
+"funds": 1
+}
+tags = PackedStringArray()
+flavor = "Know where the risks are."
+dr_tip = "Hazard maps show which areas flood or slide."
+art_id = "prep_hazard_mapping"

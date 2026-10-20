@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="MatchConfig" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/match_config.gd" id="1_jyb4k"]
+
+[resource]
+script = ExtResource("1_jyb4k")
+town_deck = {
+"bld_ashfall_shelter": 2,
+"bld_drainage_system": 2,
+"bld_early_warning_system": 2,
+"bld_evacuation_center": 2,
+"bld_reforestation": 2,
+"bld_retrofitted_structures": 2,
+"bld_seawall": 2,
+"prep_barangay_drill": 2,
+"prep_bayanihan": 2,
+"prep_community_pantry": 2,
+"prep_early_warning_broadcast": 2,
+"prep_go_bag": 2,
+"prep_hazard_mapping": 2,
+"prep_preemptive_evacuation": 2,
+"prep_relief_operations": 2,
+"res_funds": 10,
+"res_materials": 12,
+"res_supplies": 10
+}
+disaster_deck = {
+"dis_earthquake": 2,
+"dis_el_nino_drought": 3,
+"dis_flood": 3,
+"dis_landslide": 3,
+"dis_storm_surge": 2,
+"dis_typhoon": 2,
+"dis_volcanic_eruption": 2
+}

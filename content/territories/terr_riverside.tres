@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TerritoryDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/territory_definition.gd" id="1_o3128"]
+
+[resource]
+script = ExtResource("1_o3128")
+id = "terr_riverside"
+display_name = "Riverside"
+resist_tag = "volcanic"
+weak_tags = PackedStringArray("flood")
+description = "Town built along a wide river."
+art_id = "terr_riverside"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_landslide.tres" id="1_rybap"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_ibxit"]
+
+[resource]
+script = ExtResource("2_ibxit")
+disaster = ExtResource("1_rybap")
+id = "dis_landslide"
+display_name = "Landslide"
+card_type = 4
+deck = 1
+tags = PackedStringArray()
+flavor = "The hillside lets go."
+dr_tip = "Avoid steep slopes after heavy rain."
+art_id = "disaster_landslide"

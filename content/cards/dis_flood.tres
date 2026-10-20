@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DisasterCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/disasters/disaster_flood.tres" id="1_igdrd"]
+[ext_resource type="Script" path="res://scripts/defs/disaster_card_def.gd" id="2_3sfbq"]
+
+[resource]
+script = ExtResource("2_3sfbq")
+disaster = ExtResource("1_igdrd")
+id = "dis_flood"
+display_name = "Flood"
+card_type = 4
+deck = 1
+cost = {
+"any": 1
+}
+tags = PackedStringArray()
+flavor = "Brown water in the streets."
+dr_tip = "Never walk or drive through floodwater."
+art_id = "disaster_flood"

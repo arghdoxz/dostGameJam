@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BuildingDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/building_definition.gd" id="1_6j2o3"]
+
+[resource]
+script = ExtResource("1_6j2o3")
+id = "bld_reforestation"
+reductions = {
+"flood": 1,
+"landslide": 2
+}

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ResourceCardDef" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/resource_card_def.gd" id="1_pmplf"]
+
+[resource]
+script = ExtResource("1_pmplf")
+id = "res_materials"
+display_name = "Materials"
+tags = PackedStringArray()
+flavor = "Lumber, cement and rebar."
+dr_tip = "Stockpile building materials before typhoon season, not during it."
+art_id = "res_materials"

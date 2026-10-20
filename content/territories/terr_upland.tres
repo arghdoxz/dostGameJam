@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TerritoryDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/territory_definition.gd" id="1_3xfrh"]
+
+[resource]
+script = ExtResource("1_3xfrh")
+id = "terr_upland"
+display_name = "Upland"
+resist_tag = "flood"
+weak_tags = PackedStringArray("landslide")
+description = "Terraced town on the hills."
+art_id = "terr_upland"

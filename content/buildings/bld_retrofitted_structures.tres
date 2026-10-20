@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BuildingDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/defs/building_definition.gd" id="1_37lly"]
+
+[resource]
+script = ExtResource("1_37lly")
+id = "bld_retrofitted_structures"
+durability = 3
+reductions = {
+"earthquake": 2,
+"typhoon": 1
+}

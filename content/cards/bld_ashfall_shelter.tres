@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BuildingCardDef" format=3]
+
+[ext_resource type="Resource" path="res://content/buildings/bld_ashfall_shelter.tres" id="1_sltlf"]
+[ext_resource type="Script" path="res://scripts/defs/building_card_def.gd" id="2_fxy0h"]
+
+[resource]
+script = ExtResource("2_fxy0h")
+building = ExtResource("1_sltlf")
+id = "bld_ashfall_shelter"
+display_name = "Ashfall Shelter"
+card_type = 1
+cost = {
+"funds": 1,
+"materials": 1
+}
+tags = PackedStringArray()
+flavor = "A sturdy roof for falling ash."
+dr_tip = "Cover vents and wear masks during ashfall."
+art_id = "bld_ashfall_shelter"
