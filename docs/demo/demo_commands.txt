@@ -1,0 +1,226 @@
+# Demo recording script. Generated from docs/qa/scripts/tutorial_full_run.txt plus a normal-match segment.
+# Run through tools/record_demo.ps1 (Godot Movie Maker at 30 fps). Waits are FRAMES at 30 fps.
+# The last segment uses debug_* commands to reach the end of a match quickly; it is captioned as such.
+wait 30
+caption Scratch Notes: development demo (placeholder art)
+wait 66
+click_text How to Play
+wait 20
+caption Tutorial: a hot-seat match where you play both seats
+wait 66
+click_text I am ready
+wait 20
+caption The board: each mayor has a town on the map
+wait 66
+click_text Next
+wait 10
+caption Seat cards show RP (town health), hand, reserve and prep
+wait 66
+click_text Next
+wait 10
+caption The top bar: round, whose turn, phase and a hint
+wait 66
+click_text Next
+wait 10
+caption Step 1 of a turn: draw from the Town or Disaster deck
+wait 66
+click_pile town
+wait 15
+caption Select a card to read what it does
+wait 66
+click_card Seawall
+wait 15
+caption The action panel shows cost, effect and why it can or cannot be used
+wait 66
+click_text Next
+wait 10
+caption Build a Seawall, paid with Materials
+wait 66
+click_text pays: Materials
+wait 20
+caption Supplies can be banked in the Reserve
+wait 66
+click_card Supplies
+wait 15
+caption Bank in Reserve
+wait 66
+click_text Bank in Reserve
+wait 20
+caption Unaffordable cards say exactly why
+wait 66
+click_card Barangay Drill
+wait 15
+caption End Turn passes play to the next mayor
+wait 66
+click_text End Turn
+wait 20
+caption Hot-seat privacy cover: hands stay hidden between players
+wait 66
+click_text I am ready
+wait 20
+caption Rival turn: draw from the Disaster deck
+wait 66
+click_pile disaster
+wait 20
+caption Select Landslide (a level 1 disaster)
+wait 66
+click_card Landslide
+wait 15
+caption Pick a target town
+wait 66
+click_seat Ana
+wait 15
+caption Cast it
+wait 66
+click_text Play on Ana
+wait 20
+caption The target gets a Reaction window (cover first)
+wait 66
+click_text I am ready
+wait 20
+caption React with a card, or choose not to
+wait 66
+click_card Go Bag
+wait 15
+caption Go Bag reduces the damage
+wait 66
+click_text React with this card
+wait 20
+caption Device goes back to the caster
+wait 66
+click_text I am ready
+wait 25
+caption The resolution summary shows exactly what happened
+wait 66
+click_text Continue
+wait 15
+caption End Turn
+wait 66
+click_text End Turn
+wait 20
+caption Round 2
+wait 66
+click_text I am ready
+wait 20
+caption Draw
+wait 66
+click_pile town
+wait 15
+caption Typhoon is a level 2 disaster: a forecast
+wait 66
+click_card Typhoon
+wait 15
+caption Cast the forecast
+wait 66
+click_text Play
+wait 25
+caption A forecast warns the target a turn ahead
+wait 66
+click_text Continue
+wait 15
+caption End Turn
+wait 66
+click_text End Turn
+wait 20
+caption Hand-off
+wait 66
+click_text I am ready
+wait 20
+caption The forecast marker stays on the map
+wait 66
+click_pile town
+wait 15
+caption End Turn: the forecast strikes at the start of the caster turn
+wait 66
+click_text End Turn
+wait 20
+caption The forecast arrives and opens a Reaction window
+wait 66
+click_card Pre-emptive
+wait 15
+caption Pre-emptive Evacuation reduces the hit
+wait 66
+click_text React with this card
+wait 20
+caption Hand-off
+wait 66
+click_text I am ready
+wait 25
+caption Damage and destruction in the summary
+wait 66
+click_text Continue
+wait 15
+caption Round 3: draw
+wait 66
+click_pile town
+wait 15
+click_card Relief Operations
+wait 15
+caption Relief Operations heals RP
+wait 66
+click_text Play
+wait 20
+caption How a match ends: last town standing, preparedness, or the round cap
+wait 66
+click_text Next
+wait 10
+caption Log, Restart and Menu are always available
+wait 66
+click_text Next
+wait 10
+caption Tutorial complete
+wait 66
+click_text Replay tutorial
+wait 20
+caption Replay tutorial restarts from the beginning
+wait 66
+click_text Exit tutorial
+wait 20
+caption Exit tutorial returns to the menu
+wait 66
+caption Normal match: Start Local Match
+wait 40
+click_text Start Local Match
+wait 60
+caption Setup: 2-4 players, names, territories, optional seed
+wait 90
+click_text Start Match
+wait 40
+click_text I am ready
+wait 40
+caption Real match. QA shortcut ahead (DEBUG-ASSISTED): both towns set to 1 RP, Landslide dealt
+debug_give 0 dis_landslide
+debug_give 1 dis_landslide
+debug_rp 0 1
+debug_rp 1 1
+wait 90
+click_pile town
+wait 45
+caption The acting mayor selects Landslide
+click_card Landslide
+wait 75
+caption ...and targets the other town
+click_seat Mayor 1
+wait 10
+click_seat Mayor 2
+wait 75
+click_text Play on
+wait 75
+caption Reaction window: the target may pass
+click_text I am ready
+wait 90
+click_text Do not react
+wait 90
+caption Last town standing: the match ends
+wait 90
+click_text Continue
+wait 40
+click_text View results
+wait 60
+caption Results screen (placeholder art)
+wait 120
+click_text Main menu
+wait 60
+caption End of demo
+wait 60
+quit

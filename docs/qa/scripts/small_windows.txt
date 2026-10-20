@@ -1,0 +1,74 @@
+# Small-window pass: menu, setup, board with a long hand, reaction window and tutorial coach at
+# 1280x720 and 1024x768. Run: godot --path . -s res://tools/qa_driver.gd -- --script docs/qa/scripts/small_windows.txt --shots <dir>
+wait 30
+resize 1280 720
+wait 20
+shot 1280-01-menu
+click_text Start Local Match
+wait 15
+shot 1280-02-setup
+click_text Start Match
+wait 15
+click_text I am ready
+wait 20
+shot 1280-03-board-initial
+click_pile town
+wait 15
+shot 1280-04-after-draw
+click_card 0
+wait 15
+shot 1280-05-card-selected
+click_card 0
+wait 5
+debug_give 0 dis_landslide
+debug_give 0 res_materials
+debug_give 0 res_materials
+debug_give 0 res_supplies
+debug_give 0 bld_seawall
+debug_give 1 dis_landslide
+debug_give 1 res_materials
+debug_give 1 res_materials
+debug_give 1 res_supplies
+debug_give 1 bld_seawall
+wait 15
+shot 1280-06-big-hand
+click_card Landslide
+wait 15
+click_seat Mayor 1
+wait 15
+shot 1280-07-target-chosen
+click_text Play on
+wait 20
+shot 1280-08-reaction-cover
+click_text I am ready
+wait 20
+shot 1280-09-reaction-window
+click_text Do not react
+wait 20
+shot 1280-10-cover-or-summary
+resize 1024 768
+wait 20
+shot 1024-01-after-resize
+click_text I am ready
+wait 20
+shot 1024-02-summary-or-board
+click_text Continue
+wait 15
+shot 1024-03-board
+click_text Menu
+wait 15
+shot 1024-04-leave-dialog
+click_text Leave
+wait 15
+shot 1024-05-menu
+click_text How to Play
+wait 20
+shot 1024-06-tutorial-welcome
+click_text I am ready
+wait 20
+click_text Next
+wait 10
+click_text Next
+wait 10
+shot 1024-07-tutorial-seat
+dump

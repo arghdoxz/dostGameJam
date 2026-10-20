@@ -1,0 +1,16 @@
+# BUG-008: a "Territories must be distinct" error must clear once the territories are fixed.
+wait 30
+click_text Start Local Match
+wait 15
+click_xy 755 461
+wait 15
+click_xy 722 496
+wait 10
+click_text Start Match
+wait 10
+shot bug-008-error-shown
+click_xy 755 461
+wait 15
+click_xy 722 550
+wait 10
+shot bug-008-after

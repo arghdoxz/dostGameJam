@@ -1,0 +1,12 @@
+# A whole 2-player hot-seat match from the menu to the results screen and a rematch, played by the
+# driver's `auto` player (real clicks only; no debug_* commands). Used as the final regression pass.
+wait 30
+click_text Start Local Match
+wait 15
+click_text Start Match
+wait 15
+auto_seed 7
+auto 600
+shot 90-match-end-state
+dump
+audit

@@ -1,0 +1,138 @@
+# Tutorial, start to finish, through real clicks (qa_driver replay mode).
+# Run: godot --path . -s res://tools/qa_driver.gd -- --script docs/qa/scripts/tutorial_full_run.txt --shots <dir>
+# Every step is shot once while it is showing; ACTION steps show the result of the previous action
+# (green "OK - ..." line) in the next shot.
+wait 30
+shot 01-main-menu
+click_text How to Play
+wait 20
+shot 02-tutorial-01-welcome
+click_text I am ready
+wait 20
+shot 02-tutorial-02-board
+click_text Next
+wait 10
+shot 02-tutorial-03-seat
+click_text Next
+wait 10
+shot 02-tutorial-04-header
+click_text Next
+wait 10
+shot 02-tutorial-05-draw
+click_pile town
+wait 15
+shot 02-tutorial-06-select-seawall
+click_card Seawall
+wait 15
+shot 02-tutorial-07-read-panel
+click_text Next
+wait 10
+shot 02-tutorial-08-build-seawall
+click_text pays: Materials
+wait 20
+shot 02-tutorial-09-bank-supplies
+click_card Supplies
+wait 15
+shot 02-tutorial-09b-supplies-selected
+click_text Bank in Reserve
+wait 20
+shot 02-tutorial-10-why-not
+click_card Barangay Drill
+wait 15
+shot 02-tutorial-11-end-turn
+click_text End Turn
+wait 20
+shot 02-tutorial-11b-handoff-cover-ben
+click_text I am ready
+wait 20
+shot 02-tutorial-12-draw-ben
+click_pile disaster
+wait 20
+shot 02-tutorial-13-select-landslide
+click_card Landslide
+wait 15
+shot 02-tutorial-14-pick-target
+click_seat Ana
+wait 15
+shot 02-tutorial-15-cast-landslide
+click_text Play on Ana
+wait 20
+shot 02-tutorial-16a-reaction-cover
+click_text I am ready
+wait 20
+shot 02-tutorial-16b-reaction-window
+click_card Go Bag
+wait 15
+shot 02-tutorial-16c-gobag-selected
+click_text React with this card
+wait 20
+shot 02-tutorial-17a-cover-ben-back
+click_text I am ready
+wait 25
+shot 02-tutorial-17b-summary-landslide
+click_text Continue
+wait 15
+shot 02-tutorial-18-end-turn-ben
+click_text End Turn
+wait 20
+shot 02-tutorial-18b-cover-ana-round2
+click_text I am ready
+wait 20
+shot 02-tutorial-19-draw-round2
+click_pile town
+wait 15
+shot 02-tutorial-20-select-typhoon
+click_card Typhoon
+wait 15
+shot 02-tutorial-21-cast-typhoon
+click_text Play
+wait 25
+shot 02-tutorial-22-summary-forecast
+click_text Continue
+wait 15
+shot 02-tutorial-23-end-turn-ana
+click_text End Turn
+wait 20
+shot 02-tutorial-23b-cover-ben-warning
+click_text I am ready
+wait 20
+shot 02-tutorial-24-ben-warning-turn
+click_pile town
+wait 15
+shot 02-tutorial-25-end-turn-ben
+click_text End Turn
+wait 20
+shot 02-tutorial-26a-forecast-arrives
+click_card Pre-emptive
+wait 15
+shot 02-tutorial-26b-preemptive-selected
+click_text React with this card
+wait 20
+shot 02-tutorial-26c-cover-ana
+click_text I am ready
+wait 25
+shot 02-tutorial-27-summary-typhoon
+click_text Continue
+wait 15
+shot 02-tutorial-28-draw-round3
+click_pile town
+wait 15
+click_card Relief Operations
+wait 15
+shot 02-tutorial-29-heal
+click_text Play
+wait 20
+shot 02-tutorial-30-endgame-info
+click_text Next
+wait 10
+shot 02-tutorial-31-tools
+click_text Next
+wait 10
+shot 02-tutorial-32-finish
+click_text Replay tutorial
+wait 20
+shot 03-tutorial-restart-fresh
+click_text Exit tutorial
+wait 20
+shot 05-tutorial-exit-to-menu
+dump

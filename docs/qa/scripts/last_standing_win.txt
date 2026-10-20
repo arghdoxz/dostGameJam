@@ -1,0 +1,34 @@
+# Last-standing victory through the UI (DEBUG-ASSISTED: debug_give / debug_rp set the scene up).
+# Both mayors are put at 1 RP and given Landslide; whoever acts casts it on the other.
+wait 30
+click_text Start Local Match
+wait 15
+click_text Start Match
+wait 15
+click_text I am ready
+wait 20
+debug_give 0 dis_landslide
+debug_give 1 dis_landslide
+debug_rp 0 1
+debug_rp 1 1
+click_pile town
+wait 15
+shot 60-last-standing-setup
+click_card Landslide
+wait 15
+click_seat Mayor 1
+wait 10
+click_seat Mayor 2
+wait 15
+shot 61-last-standing-target-chosen
+click_text Play on
+wait 20
+shot 62-last-standing-cover
+click_text I am ready
+wait 20
+shot 63-last-standing-reaction-window
+click_text Do not react
+wait 30
+shot 64-last-standing-after
+dump
+audit
